@@ -1,0 +1,38 @@
+[
+    {
+        "name": "ManiiiMK",
+        "repo": "CodingFront",
+        "status": "Public",
+        "stack": "React-Js"
+    },
+    {
+        "name": "ManiiiMK",
+        "repo": "BootCamp",
+        "status":"Public",
+        "stack": "React"
+    },
+    {
+        "name": "ManiiiMK",
+        "repo": "Todolist",
+        "status": "Public",
+        "stack": "Html-Css-Js"
+    },
+    {
+        "name": "ManiiiMK",
+        "repo": "GitHubClone",
+        "status": "Public",
+        "stack": "React-Sass"
+    },
+    {
+        "name": "ManiiiMK",
+        "repo": "JustReact",
+        "status": "Public",
+        "stack": "JS-React"
+    },
+    {
+        "name": "ManiiiMK",
+        "repo": "FirstProject",
+        "status": "Public",
+        "stack": "html-css"
+    }
+]
