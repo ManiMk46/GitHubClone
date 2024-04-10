@@ -1,7 +1,6 @@
-import React from 'react';
+import React from "react";
 import {IoBulbOutline} from "react-icons/io5"
 import {MdRssFeed} from "react-icons/md"
-import img1 from "../img/img1.jpg";
 import {Link} from "react-router-dom";
 
 function MainRight() {
@@ -28,7 +27,7 @@ function MainRight() {
           <div className="boxCenterFirst">
             <IoBulbOutline />
             <p>
-              In az khode github am github tare khodayi
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, veritatis?
             </p>
           </div>
           <div className="boxCenterFirst">
@@ -41,7 +40,7 @@ function MainRight() {
         {/* Footer */}
         <div className="footer">
           <div className="footerFirst">
-            <img src={img1} alt="" />
+          <img src="img/img1.jpg"/>
             <h4>GitHub Clone</h4>
           </div>
           <div className="footerSecond">

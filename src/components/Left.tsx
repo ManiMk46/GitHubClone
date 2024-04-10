@@ -1,12 +1,11 @@
 import React from 'react'
-import img2 from "../img/img2.jpg";
 import {MdInsertEmoticon} from "react-icons/md";
 
 function Left() {
   return (
     <div className="left">
         <div className="image">
-            <img src={img2} alt="" />
+        <img src="img/img2.jpg"/>
             <div className="emoticonBox">
                 <MdInsertEmoticon className="emoticon" />
             </div>

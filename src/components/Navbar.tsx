@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import img1 from "../img/img1.jpg";
-import img2 from "../img/img2.jpg";
 import {Link} from "react-router-dom";
 import { FiBell , FiPlus } from "react-icons/fi";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -12,7 +10,7 @@ function Navbar() {
     <nav className="navbar">
     {/* Left */}
 <div className="navLeft">
-    <Link to="/"><img src={img1} alt="" /></Link>
+    <Link to="/"><img src="img/img1.jpg"/></Link>
     <div>
         <input type="text" placeholder='search or jump to'/>
     </div>
@@ -33,7 +31,7 @@ function Navbar() {
         <IoMdArrowDropdown />
        </div>
        <div className="navRightProf" onClick={() => setShowMenu(!showMenu)}>
-        <img src={img2} alt="" />
+       <img src="img/img2.jpg"/>
         <IoMdArrowDropdown />
        </div>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { IoMdArrowDropdown } from "react-icons/io";
 import lists from "../lists.json"
-import img2 from "../img/img2.jpg";
+
 import {Link} from "react-router-dom";
 
 function MainLeft() {
@@ -9,7 +9,7 @@ function MainLeft() {
     <div className="mainLeftContainer">
       <div className="mainLeft">
         <div className="mainLeftName">
-            <img src={img2} alt="" />
+        <img src="img/img2.jpg"/>
             <h2>ManiiiMk</h2>
             <IoMdArrowDropdown />
         </div>
@@ -27,7 +27,7 @@ function MainLeft() {
          <div className="mainLeftLists">
             {lists.map((item, idx) => (
                 <div className="item" key={idx}>
-                    <img src={img2} alt="" />
+                    <img src="img/img2.jpg"/>
                     <div>
                         <h2>{`${item.name}/${item.repo}`}</h2>
                     </div>
