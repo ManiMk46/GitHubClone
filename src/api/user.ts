@@ -1,6 +1,6 @@
 import { Octokit } from "octokit"; 
 
-const token = "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";
+const token = "//";
 
 export interface User{
   avatar_url: string;
