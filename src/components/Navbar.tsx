@@ -1,18 +1,35 @@
-import React, { useState } from 'react'
+import React ,{ useEffect, useRef, useState } from "react";
 import {Link} from "react-router-dom";
 import { FiBell , FiPlus } from "react-icons/fi";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Menu from "./Menu"
+import {getUser} from "../api/user";
 
-function Navbar() {
+export default function Navbar() {
     const [showMenu, setShowMenu] = useState(false);
+    const [val , setval] = useState("");
+    const inputRef = useRef(null);
+    
+    useEffect(() =>{
+      // @ts-ignore
+      inputRef.current.focus(); 
+    },[]);
   return (
     <nav className="navbar">
     {/* Left */}
 <div className="navLeft">
     <Link to="/"><img src="img/img1.jpg"/></Link>
     <div>
-        <input type="text" placeholder='search or jump to'/>
+        <input type="text" placeholder='search or jump to' 
+         value={val }
+         ref={inputRef} 
+         onChange={(e) =>{
+            const text=e.target.value;
+            setval(text);
+        }}/>
+        <button onClick={() =>{
+          getUser(val).then(console.log);
+        }}>Search</button>
     </div>
 </div>
 
@@ -38,6 +55,4 @@ function Navbar() {
     {showMenu && <Menu />}
     </nav>
   )
-}
-
-export default Navbar
+};

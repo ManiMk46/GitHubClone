@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import {getUser} from "../api/user";
 import { IoMdArrowDropdown } from "react-icons/io";
-import lists from "../lists.json"
-
+import lists from "../lists.json";
 import {Link} from "react-router-dom";
 
 function MainLeft() {
+
   return (
     <div className="mainLeftContainer">
       <div className="mainLeft">

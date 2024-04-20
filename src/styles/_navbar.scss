@@ -30,11 +30,23 @@
             font-weight: bold;
             border: 1px solid var(--line-color);
             border-radius: 4px;
+            color: white;
         }
 
         input:focus {
             width: 400px;
             transition: width ease-out 0.3s;
+        }
+        button {
+            color: #858383;
+            background-color: var(--input-color);
+            border: 1px solid var(--line-color);
+            height: 33px;
+            font-weight: bold;
+            border-radius: 4px;
+            width: 80px;
+            margin-left: 5px;
+            cursor: pointer;
         }
     }
 
@@ -42,7 +54,7 @@
         flex: 1;
         display: flex;
         gap: 18px;
-        margin-left: 18px;
+        margin-left: 60px;
         align-items: center;
         color: white;
 
